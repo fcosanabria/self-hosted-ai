@@ -44,6 +44,7 @@ x-init-ollama: &init-ollama
     - "sleep 3; OLLAMA_HOST=ollama:11434 ollama pull llama3.1; OLLAMA_HOST=ollama:11434 ollama pull nomic-embed-text"
 
 services:
+
   postgres:
     image: postgres:16-alpine
     networks: ['demo']
