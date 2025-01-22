@@ -40,23 +40,12 @@ Engineering world, handles large amounts of data safely.
 ### Cloning the Repository
 
 ```bash
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+git clone git@github.com:fcosanabria/self-hosted-ai.git
+# or https if you are not using ssh-keys.
+cd self-hosted-ai
 ```
 
 ### Running n8n using Docker Compose
-
-#### For Nvidia GPU users
-
-```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
-docker compose --profile gpu-nvidia up
-```
-
-> [!NOTE]
-> If you have not used your Nvidia GPU with Docker before, please follow the
-> [Ollama Docker instructions](https://github.com/ollama/ollama/blob/main/docs/docker.md).
 
 #### For Mac / Apple Silicon users
 
@@ -72,18 +61,31 @@ If you want to run Ollama on your mac, check the
 [Ollama homepage](https://ollama.com/)
 for installation instructions, and run the starter kit as follows:
 
-```
-git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
-cd self-hosted-ai-starter-kit
+```bash
+git clone git@github.com:fcosanabria/self-hosted-ai.git
+# or https if you are not using ssh-keys.
+cd self-hosted-ai
 docker compose up
 ```
 
 After you followed the quick start set-up below, change the Ollama credentials
 by using `http://host.docker.internal:11434/` as the host.
 
-#### For everyone else
+#### For Nvidia GPU users
 
 ```
+git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
+cd self-hosted-ai-starter-kit
+docker compose --profile gpu-nvidia up
+```
+
+> [!NOTE]
+> If you have not used your Nvidia GPU with Docker before, please follow the
+> [Ollama Docker instructions](https://github.com/ollama/ollama/blob/main/docs/docker.md).
+
+#### For everyone else
+
+```bash
 git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
 cd self-hosted-ai-starter-kit
 docker compose --profile cpu up
