@@ -1,5 +1,7 @@
 Secret Examples
 
+N8N_ENCRYPTION_KEY -> Qdrant API Key
+
 ```
 kubectl create secret generic postgres-secrets \
   --from-literal=POSTGRES_USER=tu_usuario \
